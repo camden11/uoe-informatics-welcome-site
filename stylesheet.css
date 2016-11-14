@@ -1,0 +1,5 @@
+.jumbotron {
+	background: url(books.jpg);
+	overflow: hidden;
+	height: 700px;
+}
