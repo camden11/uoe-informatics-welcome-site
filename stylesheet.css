@@ -1,5 +1,5 @@
 .jumbotron {
-	background: url(books.jpg);
+	background: url(desk.jpg);
 	overflow: hidden;
 	height: 700px;
 }
@@ -16,4 +16,34 @@
 
 .map-location:hover {
   background-color: #f9f9f9;
+
+.jumbotron .container{
+	color: #ffffff;
+	text-align: center;
+}
+
+.jumbotron h1 {
+	padding: 50px 0px 50px 0px;
+}
+
+.cover_button {
+	padding: 10px;
+	width: 200px;
+	border-radius: 5px;
+	border: none;
+    color: white;
+    background-color: #6DC066;
+    margin: 20px;
+    font-size: 20px;
+    -webkit-transition-duration: 0.6s;
+    transition-duration: 0.6s;
+}
+
+.cover_button:hover {
+	background-color: #ffffff; /* Green */
+    color: #6DC066;
+}
+
+.cover_button:focus {
+    outline:none;
 }
