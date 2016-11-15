@@ -17,6 +17,7 @@
 
 .map-location:hover {
   background-color: #f9f9f9;
+}
 
 .jumbotron .container{
 	color: #ffffff;
@@ -47,4 +48,9 @@
 
 .cover_button:focus {
     outline:none;
+}
+
+#map {
+  height: 400px;
+  width: 100%;
 }
