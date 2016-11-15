@@ -27,15 +27,114 @@
 
     <section id="welcome-week">
       <div class="container ">
-        <h1>First Week at University of Edinburgh</h1>
+        <h1>Your First Week in Edinburgh</h1>
+        <div class="row">
+          <div class="col-sm-8">
+
+            <h3>Important Dates</h3>
+              <table class="table">
+                <thead>
+                  <tr>
+                    <th>Date</th>
+                    <th>Event</th>
+                  </tr>
+                </thead>
+                <tbody>
+                  <tr>
+                    <td>10-18 September 2016</td>
+                    <td>Welcome Week</td>
+                  </tr>
+                  <tr>
+                    <td>12 September 2016</td>
+                    <td>Recommended move-in day</td>
+                  </tr>
+                  <tr>
+                    <td>19 September 2016</td>
+                    <td>Semester 1 begins</td>
+                  </tr>
+                </tbody>
+              </table>
+
+            <h3>University Campus</h3>
+            <p class="lead">The University of Edinburgh's George Square campus is located in the heart of Edinburgh. While on campus, you'll have access to everything you need within short walking distance.</p>
+            <h5>Important Locations</h5>
+            <div id="map"></div>
+            <table class="table">
+              <thead>
+                <tr>
+                  <th>Location</th>
+                  <th>Address</th>
+                </tr>
+              </thead>
+              <tbody>
+                <tr class="map-location" data-map-index="0">
+                  <td>Main Library</td>
+                  <td>30 George Square, Edinburgh EH8 9LJ</td>
+                </tr>
+                <tr class="map-location" data-map-index="1">
+                  <td>Appleton Tower</td>
+                  <td>11 Crichton St, Edinburgh EH8 9LE</td>
+                </tr>
+                <tr class="map-location" data-map-index="2">
+                  <td>David Hume Tower</td>
+                  <td>George Square, Edinburgh EH8 9JX</td>
+                </tr>
+                <tr class="map-location" data-map-index="3">
+                  <td>7 Bristo Square</td>
+                  <td>7 Bristo Pl, Edinburgh EH8 9AL</td>
+                </tr>
+                <tr class="map-location" data-map-index="4">
+                  <td>Forrest Hill</td>
+                  <td>Forrest Hill, Edinburgh EH1 2QL</td>
+                </tr>
+                <tr class="map-location" data-map-index="5">
+                  <td>Informatics Forum</td>
+                  <td>10 Crichton St, Edinburgh EH8 9AB</td>
+                </tr>
+                <tr class="map-location" data-map-index="6">
+                  <td>Health Center</td>
+                  <td>6 Bristo Pl, Edinburgh EH8 9AL</td>
+                </tr>
+                <tr class="map-location" data-map-index="7">
+                  <td>International Student Center</td>
+                  <td>22b Buccleuch Place, Edinburgh EH8</td>
+                </tr>
+                <tr class="map-location" data-map-index="8">
+                  <td>Teviot Row House</td>
+                  <td>13 Bristo Pl, Edinburgh EH8 9AJ</td>
+                </tr>
+                <tr class="map-location" data-map-index="9">
+                  <td>Potterrow</td>
+                  <td>5/2 Bristo Pl, Edinburgh EH8 9AL</td>
+                </tr>
+
+              </tbody>
+            </table>
+            <h5>Transportation</h5>
+            <h3>Welcome Week Events</h3>
+            <h3>Getting Involved</h3>
+            <h3>Preparing for Classes</h3>
+          </div>
+          <div class="col-sm-4">
+            <div class="panel panel-default">
+              <div class="panel-heading">
+                <h3 class="panel-title visible-sm">FAQs</h3>
+                <h3 class="panel-title hidden-sm">Frequently Asked Questions</h3>
+              </div>
+              <div class="panel-body">
+                Panel content
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
     </section>
 
-    <section id="informatics">
+    <!-- <section id="informatics">
       <div class="container ">
         <h1>School of Informatics</h1>
       </div>
-    </section>
+    </section> -->
 
     <footer>
       <div class="container ">
@@ -47,6 +146,9 @@
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/js/bootstrap.min.js"></script>
     <script src="cover.js"></script>
+    <script src="map.js"></script>
+    <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAvKpWXp7oYFxcOyFbsejPGYCyeGrAPh1A&callback=initMap"
+    async defer></script>
   </body> 
 
 </html>
