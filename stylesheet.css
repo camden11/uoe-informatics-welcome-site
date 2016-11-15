@@ -1,3 +1,4 @@
+
 .jumbotron {
   background: url(desk.jpg) no-repeat center center fixed;
   background-size: cover;
@@ -20,7 +21,7 @@
   border-radius: 5px;
   border: none;
     color: white;
-    background-color: #6DC066;
+    background-color: #004f73;
     margin: 20px;
     font-size: 20px;
     -webkit-transition-duration: 0.6s;
@@ -29,7 +30,7 @@
 
 .cover_button:hover {
   background-color: #ffffff; /* Green */
-    color: #6DC066;
+    color: #004f73;
 }
 
 .cover_button:focus {
@@ -43,33 +44,7 @@
 
 .map-location {
   cursor: pointer;
-  color: #337ab7;
-}
-
-.map-location:hover {
-  background-color: #f9f9f9;
-}
-
-.cover_button {
-	padding: 10px;
-	width: 200px;
-	border-radius: 5px;
-	border: none;
-    color: white;
-    background-color: #6DC066;
-    margin: 20px;
-    font-size: 20px;
-    -webkit-transition-duration: 0.6s;
-    transition-duration: 0.6s;
-}
-
-.cover_button:hover {
-	background-color: #ffffff; /* Green */
-    color: #6DC066;
-}
-
-.cover_button:focus {
-    outline:none;
+  color: #004f73;
 }
 
 .map-location:hover {
@@ -77,7 +52,8 @@
 }
 
 #informatics {
-	background-color: #ccebfb;
+	background: url(crossword.png) fixed;
+
 }
 
 .faq-answer {
@@ -129,3 +105,19 @@
   border-top: none;
   padding-top: 0;
 }
+
+h1, h3, a {
+	color: #004f73
+}
+
+footer {
+	background-color: #004f73;
+	color: #ffffff;
+	height: 200px;
+	text-align: center;
+}
+
+footer p {
+	padding-top: 150px;
+}
+
