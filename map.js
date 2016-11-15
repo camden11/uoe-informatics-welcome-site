@@ -10,10 +10,9 @@ var locations = [
   { name: "Health Center", coords: { lat: 55.945813, lng: -3.188056 }},
   { name: "International Student Center", coords: { lat: 55.942580, lng: -3.187794}},
   { name: "Teviot Row House", coords: { lat: 55.944887, lng: -3.188599 }},
-  { name: "Potterrow", coords: { lat: 55.946593, lng: -3.187396}}
+  { name: "Potterrow", coords: { lat: 55.946885, lng: -3.187546 }}
 ];
 
-// var activeMarker;
 var activeWindow;
 
 function initMap() {
@@ -24,36 +23,34 @@ function initMap() {
 }
 
 function updateMap(mapIndex) {
-  removeCurrentMarker();
+  removeCurrentWindow();
   var currentLocation = locations[mapIndex]
-  // var marker = new google.maps.Marker({
-  //   position: currentLocation.coords,
-  //   map: map,
-  //   title: 'Hello World!'
-  // });
-
   var infowindow = new google.maps.InfoWindow({
-    content: currentLocation.name,
+    content: windowContent(currentLocation),
     position: currentLocation.coords
   });
   infowindow.open(map);
-
-  // activeMarker = marker;
   activeWindow = infowindow;
 }
 
-function removeCurrentMarker() {
-  // if (activeMarker != null) {
-  //   activeMarker.setMap(null);
-  // }
+function removeCurrentWindow() {
   if (activeWindow != null) {
     activeWindow.close();
   }
 }
 
+function windowContent(location) {
+  return location.name + "<br><a target='_blank' href='https://www.google.com/maps/dir/Current+Location/" + location.coords.lat.toString() + "," + location.coords.lng.toString() +"'>Get directions</a>"
+}
+
 $(document).ready(function() {
   $(".map-location").click(function() {
-    console.log($(this).data("map-index"));
-    updateMap($(this).data("map-index"));
+    var mapLocation = $(this);
+    $('html, body').animate({
+      scrollTop: $("#map-scroll-to").offset().top - 10
+    }, 500);
+    setTimeout(function(){
+      updateMap($(mapLocation).data("map-index"));
+    }, 500);
   });
 })

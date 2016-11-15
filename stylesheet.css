@@ -39,3 +39,12 @@
   height: 400px;
   width: 100%;
 }
+
+.map-location {
+  cursor: pointer;
+  color: #337ab7;
+}
+
+.map-location:hover {
+  background-color: #f9f9f9;
+}
