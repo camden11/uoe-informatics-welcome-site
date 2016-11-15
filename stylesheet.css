@@ -89,7 +89,13 @@
 
 .faq-quest {
 	padding-bottom: 10px;
-}@media (min-width: 768px) {
+}
+
+.faq-quest:hover {
+  color: 
+}
+
+@media (min-width: 768px) {
   p.lead {
     font-size: 16px;
   }
