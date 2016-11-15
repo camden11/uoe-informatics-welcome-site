@@ -82,7 +82,14 @@
 #informatics {
 	background-color: #ccebfb;
 }
-@media (min-width: 768px) {
+
+.faq-answer {
+	padding-top: 0px;
+}
+
+.faq-quest {
+	padding-bottom: 10px;
+}@media (min-width: 768px) {
   p.lead {
     font-size: 16px;
   }
