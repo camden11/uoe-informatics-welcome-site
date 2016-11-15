@@ -5,25 +5,6 @@
   height: 700px;
 }
 
-#map {
-  height: 400px;
-  width: 100%;
-}
-
-.map-location {
-  cursor: pointer;
-  color: #337ab7;
-}
-
-.map-location:hover {
-  background-color: #f9f9f9;
-}
-
-@media (min-width: 768px) {
-  p.lead {
-    font-size: 16px;
-  }
-}
 .jumbotron .container{
   color: #ffffff;
   text-align: center;
@@ -58,4 +39,23 @@
 #map {
   height: 400px;
   width: 100%;
+}
+
+.map-location {
+  cursor: pointer;
+  color: #337ab7;
+}
+
+.map-location:hover {
+  background-color: #f9f9f9;
+}
+
+@media (min-width: 768px) {
+  p.lead {
+    font-size: 16px;
+  }
+}
+
+.faq-panel {
+  padding: 0;
 }
