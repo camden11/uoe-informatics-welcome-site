@@ -94,10 +94,21 @@
   border-radius: 0;
 }
 
+.faq-panel .panel-body .panel-group .panel.panel-default {
+  margin-top: 0;
+}
+
 .faq-panel .panel-body .panel-group .panel .panel-heading {
   background-color: #fff;
   border-radius: 0;
+  cursor: pointer;
+  color: #004f73;
 }
+
+.faq-panel .panel-body .panel-group .panel .panel-heading:hover {
+  background-color: #f9f9f9;
+}
+
 
 .faq-panel .panel-body .panel-group .panel .panel-body {
   background-color: #fff;
@@ -113,11 +124,12 @@ h1, h3, a {
 footer {
 	background-color: #004f73;
 	color: #ffffff;
-	height: 200px;
 	text-align: center;
+  padding-top: 15px;
+  padding-bottom: 15px;
 }
 
 footer p {
-	padding-top: 150px;
+  margin: 0;
 }
 
