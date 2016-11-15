@@ -47,7 +47,7 @@ $(document).ready(function() {
   $(".map-location").click(function() {
     var mapLocation = $(this);
     $('html, body').animate({
-      scrollTop: $("#map-scroll-to").offset().top - 10
+      scrollTop: $("#map-scroll-to").offset().top - 60
     }, 500);
     setTimeout(function(){
       updateMap($(mapLocation).data("map-index"));
